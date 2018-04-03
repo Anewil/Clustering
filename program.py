@@ -138,7 +138,7 @@ class Kohonen:
         dataset.generate_neurons()
 
     def gaussian_neighborhood(self, distance, lamb):
-        return np.exp(-(pow(distance, 2) / 2.0 * pow(lamb, 2)))
+        return np.exp(-(pow(distance, 2) / (2.0 * pow(lamb, 2))))
 
 
 class Kmeans:
